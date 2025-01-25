@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="head-container">
+            <div class="left-container">
+                <div class="logo-container">
+                    <a href="index.html"><img class="logo" src="images/logo.png"/></a>
+                </div>
+            </div>
+        <div class="right-container">
+                <div class="streamer-container">
+                    <a href="readinglist.html">Reading List</a>
+                </div>
+                <div class="streamer-container">
+                    <a href="thefifthfreedom.html">The Fifth Freedom</a>
+                </div>
+                <div class="viewer-container">
+                    <a href="mission.html">Mission</a>
+                </div>
+                <div class="viewer-container">
+                    <a href="getinvolved.html">Get Involved</a>
+                </div>
+                
+            </div>        
+        </div>
+        <style>
+            .head-container {
+                display: flex;
+                flex-direction: row;
+                border-style: solid;
+                padding: 2em;
+            }
+            .left-container {
+                justify-content: flex-start;
+                border-style: solid;
+                
+                text-align: center;
+            }
+            .right-container {
+                display: flex;
+                border-style: solid;
+                flex-direction: row;
+                flex-grow: 1;
+                flex-wrap: nowrap;
+            }
+            .logo-container {
+                padding-right: 2em;
+                padding-left: 2em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+               
+            }
+            .streamer-container{
+                padding: 1em;
+                border-style: solid;
+                flex-grow: 1;
+                text-align: center;
+            }
+            .viewer-container{
+                padding: 1em;
+                border-style: solid;
+                flex-grow: 1;
+                text-align: center;
+            }
+            .logo {
+                width:125px;
+                height:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="body-container">
+            <div class="video-container">
+                <h1>Who Are the 3.5%</h1>
+                
+                <div class="textbox">
+                <p>Stated by David Robson at the BBC and supported by the Harvard Carr Center for Human Rights Policy,
+                    "Nonviolent protests are twice as likely to succeed as armed conflicts, and those engaging a threshold of 3.5% of the population have never failed to bring about change."
+                    It takes just 3.5% of the population's refusal to accept human rights violations to bring about permenant change.
+                     You might be saying to yourself
+                     "Only 3.5%? Thats all it takes?" That sure sounds like an attainable goal, and I 
+                     certainly agree, but 3.5% of the population is still 11.7 million people!
+                     11.7 million people participating in active action is quiet the feat and it will not 
+                     happen without your help. That is why I am asking America to join us, the 3.5%, to stand
+                     with our marginalized brothers and sisters for change. 
+                </p>
+                </div>
+                
+            </div>
+            <div class="video-container">
+                <h1>How do I join the 3.5%</h1>
+                
+                <div class="textbox">
+                <p> First, you sign up for our newsletter. Next, take time to educate yourself on the civil rights movements
+                    that have come before us and that we hope to build upon. We will be compiling a reading list to this end.
+                    Then you take action by getting involved in your local community. The goal of the 3.5% is to support communities throughout
+                    the United States through mutual aid intiatives and community support networks. We will
+                    keep a living list of organizations that you can get involved in or donate to. The 
+                    3.5% will also be looking to collect donations from supporters in the future in an effort to fund local organizations 
+                    that closely align with our mission. 
+                </p>
+                <form action="/mailinglist.php">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+            </div>
+            
+        </div>
+        <style>
+            .body-container{
+                display: flex;
+                border-style: solid;
+                padding: 4em;
+                flex-direction: column;
+            }
+            .video-container{
+                
+                border-style: solid;
+                
+                padding: 4em;
+                flex-direction: row;
+                text-align: center;
+            }
+            .ui-container {
+                display: flex;
+                border-style: solid;
+            }
+            .chat-container {
+                display: flex;
+                flex-direction: column;
+                border-style: solid;
+                flex-grow: 1;
+
+            }
+            .bet-container {
+                display: flex;
+                flex-direction: column;
+                border-style: solid;
+                flex-grow: 1;
+                justify-content: center;
+            }
+            .overunder-container {
+                display: flex;
+                border-style: solid;
+                justify-content: center;
+            }
+            .buy-sell-container {
+                display: flex;
+                border-style: solid;
+                justify-content: center;
+            }
+            .dump-container {
+                display: flex;
+                border-style: solid;
+                justify-content: center;
+            }
+            .textbox {
+               
+               
+                
+               flex-direction: row;
+               justify-content: center;
+           }
+            
+        </style>
+    </body>
+</html>
