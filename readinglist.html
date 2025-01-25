@@ -7,21 +7,20 @@
                     <a href="index.html"><img class="logo" src="images/logo.png"/></a>
                 </div>
             </div>
-        <div class="right-container">
-                <div class="streamer-container">
-                    <a href="readinglist.html">Reading List</a>
+            <div class="right-container">
+                <div class="page-link-container">
+                    <a href="index.html">Who Are The 3.5%</a>
                 </div>
-                <div class="streamer-container">
-                    <a href="thefifthfreedom.html">The Fifth Freedom</a>
-                </div>
-                <div class="viewer-container">
+                <div class="page-link-container">
                     <a href="mission.html">Mission</a>
                 </div>
-                <div class="viewer-container">
+                <div class="page-link-container">
                     <a href="getinvolved.html">Get Involved</a>
                 </div>
-                
-            </div>        
+                <div class="page-link-container">
+                    <a href="readinglist.html">Reading List</a>
+                </div>
+            </div>         
         </div>
         <style>
             .head-container {
@@ -38,10 +37,11 @@
             }
             .right-container {
                 display: flex;
-                border-style: solid;
+                border-style: none;
                 flex-direction: row;
                 flex-grow: 1;
                 flex-wrap: nowrap;
+                padding: 2em;
             }
             .logo-container {
                 padding-right: 2em;
@@ -50,15 +50,9 @@
                 padding-bottom: 1em;
                
             }
-            .streamer-container{
+            .page-link-container{
                 padding: 1em;
-                border-style: solid;
-                flex-grow: 1;
-                text-align: center;
-            }
-            .viewer-container{
-                padding: 1em;
-                border-style: solid;
+                border-style: none;
                 flex-grow: 1;
                 text-align: center;
             }
@@ -66,11 +60,32 @@
                 width:125px;
                 height:100px;
             }
+            a:link {
+                color: rgb(0, 0, 0);
+                background-color: transparent;
+                text-decoration: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
+            a:visited {
+                color: rgb(0, 0, 0);
+                background-color: transparent;
+                text-decoration: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
         </style>
     </head>
     <body>
         <div class="body-container">
-            <div class="video-container">
+            <div class="section-container">
                 <h1>Reading List</h1>
                 <div class="list-container">
                 <ul>
@@ -104,49 +119,22 @@
                 padding: 4em;
                 flex-direction: column;
             }
-            .video-container{
-                
+            .section-container{
                 border-style: solid;
-                
                 padding-top: 4em;
                 padding-bottom: 4em;
                 flex-direction: row;
                 text-align: center;
             }
-            .ui-container {
-                display: flex;
-                border-style: solid;
-            }
             .list-container {
                 display: flex;
                 flex-direction: row;
-                
                 justify-content: center;
-               text-align: left;
-                
-
+                text-align: left;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
-            .bet-container {
-                display: flex;
-                flex-direction: column;
-                border-style: solid;
-                flex-grow: 1;
-                justify-content: center;
-            }
-            .overunder-container {
-                display: flex;
-                border-style: solid;
-                justify-content: center;
-            }
-            .buy-sell-container {
-                display: flex;
-                border-style: solid;
-                justify-content: center;
-            }
-            .dump-container {
-                display: flex;
-                border-style: solid;
-                justify-content: center;
+            .p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
             
         </style>

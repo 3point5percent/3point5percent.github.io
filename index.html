@@ -7,20 +7,19 @@
                     <a href="index.html"><img class="logo" src="images/logo.png"/></a>
                 </div>
             </div>
-        <div class="right-container">
-                <div class="streamer-container">
-                    <a href="readinglist.html">Reading List</a>
+            <div class="right-container">
+                <div class="page-link-container">
+                    <a href="index.html">Who Are The 3.5%</a>
                 </div>
-                <div class="streamer-container">
-                    <a href="thefifthfreedom.html">The Fifth Freedom</a>
-                </div>
-                <div class="viewer-container">
+                <div class="page-link-container">
                     <a href="mission.html">Mission</a>
                 </div>
-                <div class="viewer-container">
+                <div class="page-link-container">
                     <a href="getinvolved.html">Get Involved</a>
                 </div>
-                
+                <div class="page-link-container">
+                    <a href="readinglist.html">Reading List</a>
+                </div>
             </div>        
         </div>
         <style>
@@ -38,10 +37,11 @@
             }
             .right-container {
                 display: flex;
-                border-style: solid;
+                border-style: none;
                 flex-direction: row;
                 flex-grow: 1;
                 flex-wrap: nowrap;
+                padding: 2em;
             }
             .logo-container {
                 padding-right: 2em;
@@ -50,15 +50,9 @@
                 padding-bottom: 1em;
                
             }
-            .streamer-container{
+            .page-link-container{
                 padding: 1em;
-                border-style: solid;
-                flex-grow: 1;
-                text-align: center;
-            }
-            .viewer-container{
-                padding: 1em;
-                border-style: solid;
+                border-style: none;
                 flex-grow: 1;
                 text-align: center;
             }
@@ -66,15 +60,35 @@
                 width:125px;
                 height:100px;
             }
+            a:link {
+                color: rgb(0, 0, 0);
+                background-color: transparent;
+                text-decoration: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
+            a:visited {
+                color: rgb(0, 0, 0);
+                background-color: transparent;
+                text-decoration: none;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+            }
         </style>
     </head>
     <body>
         <div class="body-container">
-            <div class="video-container">
+            <div class="section-container">
                 <h1>Who Are the 3.5%</h1>
-                
                 <div class="textbox">
-                <p>Stated by David Robson at the BBC and supported by the Harvard Carr Center for Human Rights Policy,
+                <p class="paragraph">Stated by David Robson at the BBC and supported by the Harvard Carr Center for Human Rights Policy,
                     "Nonviolent protests are twice as likely to succeed as armed conflicts, and those engaging a threshold of 3.5% of the population have never failed to bring about change."
                     It takes just 3.5% of the population's refusal to accept human rights violations to bring about permenant change.
                      You might be saying to yourself
@@ -87,23 +101,22 @@
                 </div>
                 
             </div>
-            <div class="video-container">
+            <div class="section-container">
                 <h1>How do I join the 3.5%</h1>
-                
                 <div class="textbox">
-                <p> First, you sign up for our newsletter. Next, take time to educate yourself on the civil rights movements
-                    that have come before us and that we hope to build upon. We will be compiling a reading list to this end.
+                <p class="paragraph"> First, keep an eye on this website. We will soon be adding a mailing list to sign up for our newsletter.<br><br>  
+                    Next, take time to educate yourself on the civil rights movements that have come before us and that we hope to build upon. We will be compiling a reading list to this end.<br><br>
                     Then you take action by getting involved in your local community. The goal of the 3.5% is to support communities throughout
                     the United States through mutual aid intiatives and community support networks. We will
                     keep a living list of organizations that you can get involved in or donate to. The 
                     3.5% will also be looking to collect donations from supporters in the future in an effort to fund local organizations 
                     that closely align with our mission. 
                 </p>
-                <form action="/mailinglist.php">
+                <!-- <form action="/mailinglist.php">
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email"><br><br>
                     <input type="submit" value="Submit">
-                  </form>
+                </form> -->
                 </div>
             </div>
             
@@ -115,55 +128,19 @@
                 padding: 4em;
                 flex-direction: column;
             }
-            .video-container{
-                
+            .section-container{
                 border-style: solid;
-                
                 padding: 4em;
                 flex-direction: row;
                 text-align: center;
             }
-            .ui-container {
-                display: flex;
-                border-style: solid;
-            }
-            .chat-container {
-                display: flex;
-                flex-direction: column;
-                border-style: solid;
-                flex-grow: 1;
-
-            }
-            .bet-container {
-                display: flex;
-                flex-direction: column;
-                border-style: solid;
-                flex-grow: 1;
-                justify-content: center;
-            }
-            .overunder-container {
-                display: flex;
-                border-style: solid;
-                justify-content: center;
-            }
-            .buy-sell-container {
-                display: flex;
-                border-style: solid;
-                justify-content: center;
-            }
-            .dump-container {
-                display: flex;
-                border-style: solid;
-                justify-content: center;
-            }
             .textbox {
-               
-               
-                
                flex-direction: row;
                justify-content: center;
            }
-            
+           p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
         </style>
     </body>
 </html>
