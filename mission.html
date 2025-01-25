@@ -7,21 +7,20 @@
                     <a href="index.html"><img class="logo" src="images/logo.png"/></a>
                 </div>
             </div>
-        <div class="right-container">
-                <div class="streamer-container">
-                    <a href="readinglist.html">Reading List</a>
-                </div>
-                <div class="streamer-container">
-                    <a href="thefifthfreedom.html">The Fifth Freedom</a>
-                </div>
-                <div class="viewer-container">
+            <div class="right-container">
+                <div class="page-link-container">
                     <a href="mission.html">Mission</a>
                 </div>
-                <div class="viewer-container">
+                <div class="page-link-container">
+                    <a href="thefifthfreedom.html">The Fifth Freedom</a>
+                </div>
+                <div class="page-link-container">
                     <a href="getinvolved.html">Get Involved</a>
                 </div>
-                
-            </div>        
+                <div class="page-link-container">
+                    <a href="readinglist.html">Reading List</a>
+                </div>
+            </div>         
         </div>
         <style>
             .head-container {
@@ -38,7 +37,7 @@
             }
             .right-container {
                 display: flex;
-                border-style: solid;
+                border-style: none;
                 flex-direction: row;
                 flex-grow: 1;
                 flex-wrap: nowrap;
@@ -50,13 +49,13 @@
                 padding-bottom: 1em;
                
             }
-            .streamer-container{
+            .page-link-container{
                 padding: 1em;
                 border-style: solid;
                 flex-grow: 1;
                 text-align: center;
             }
-            .viewer-container{
+            .page-link-container{
                 padding: 1em;
                 border-style: solid;
                 flex-grow: 1;
@@ -66,11 +65,26 @@
                 width:125px;
                 height:100px;
             }
+            a:link {
+                color: rgb(0, 0, 0);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color: rgb(0, 0, 0);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
         <div class="body-container">
-            <div class="video-container">
+            <div class="section-container">
                 <h1>Mission</h1>
                 <div class="textbox">
                 <p>
@@ -81,7 +95,7 @@
                 </p>
                 </div>
                 </div>
-                <div class="video-container">
+                <div class="section-container">
                 <br>
                 <h2>What does accomplishing our Mission look like?</h2>
                 <p>
@@ -114,7 +128,7 @@
                 padding: 4em;
                 flex-direction: column;
             }
-            .video-container{
+            .section-container{
                 
                 border-style: solid;
                 
